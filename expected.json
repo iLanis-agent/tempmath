@@ -1,0 +1,434 @@
+[
+ {
+  "fn": "convertTruth",
+  "args": [
+   "20",
+   "C"
+  ],
+  "expected": "20 C is exactly 68 F and exactly 293.15 K."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "0",
+   "C"
+  ],
+  "expected": "0 C is exactly 32 F and exactly 273.15 K."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "-40",
+   "C"
+  ],
+  "expected": "-40 C is exactly -40 F and exactly 233.15 K."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "100",
+   "C"
+  ],
+  "expected": "100 C is exactly 212 F and exactly 373.15 K."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "37",
+   "C"
+  ],
+  "expected": "37 C is exactly 98.6 F and exactly 310.15 K."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "98.6",
+   "F"
+  ],
+  "expected": "98.6 F is exactly 37 C and exactly 310.15 K."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "32",
+   "F"
+  ],
+  "expected": "32 F is exactly 0 C and exactly 273.15 K."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "-459.67",
+   "F"
+  ],
+  "expected": "-459.67 F is exactly -273.15 C and exactly 0 K."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "0",
+   "K"
+  ],
+  "expected": "0 K is exactly -273.15 C and exactly -459.67 F."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "273.15",
+   "K"
+  ],
+  "expected": "273.15 K is exactly 0 C and exactly 32 F."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "300",
+   "K"
+  ],
+  "expected": "300 K is exactly 26.85 C and exactly 80.33 F."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "1000000",
+   "C"
+  ],
+  "expected": "1000000 C is exactly 1800032 F and exactly 1000273.15 K."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "1000000",
+   "F"
+  ],
+  "expected": "1000000 F is about 555537.78 C and about 555810.93 K. Figures marked about are rounded to 2 decimal places."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "0.01",
+   "F"
+  ],
+  "expected": "0.01 F is about -17.77 C and about 255.38 K. Figures marked about are rounded to 2 decimal places."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "-17.78",
+   "C"
+  ],
+  "expected": "-17.78 C is about 0 F and exactly 255.37 K. Figures marked about are rounded to 2 decimal places."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "-273.15",
+   "C"
+  ],
+  "expected": "-273.15 C is exactly -459.67 F and exactly 0 K."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   " 5 ",
+   "C"
+  ],
+  "expected": "5 C is exactly 41 F and exactly 278.15 K."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "-0",
+   "C"
+  ],
+  "expected": "-0 C is exactly 32 F and exactly 273.15 K."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "72",
+   "F"
+  ],
+  "expected": "72 F is about 22.22 C and about 295.37 K. Figures marked about are rounded to 2 decimal places."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "350",
+   "F"
+  ],
+  "expected": "350 F is about 176.67 C and about 449.82 K. Figures marked about are rounded to 2 decimal places."
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "-459.68",
+   "F"
+  ],
+  "expected": "ERR:that temperature is below absolute zero (0 K, -273.15 C, -459.67 F)"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "-273.16",
+   "C"
+  ],
+  "expected": "ERR:that temperature is below absolute zero (0 K, -273.15 C, -459.67 F)"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "-0.01",
+   "K"
+  ],
+  "expected": "ERR:that temperature is below absolute zero (0 K, -273.15 C, -459.67 F)"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "-1000000",
+   "C"
+  ],
+  "expected": "ERR:that temperature is below absolute zero (0 K, -273.15 C, -459.67 F)"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "1000000.01",
+   "C"
+  ],
+  "expected": "ERR:temperature must be a number with at most 2 decimals, between -1000000 and 1000000"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "abc",
+   "C"
+  ],
+  "expected": "ERR:temperature must be a number with at most 2 decimals, between -1000000 and 1000000"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "1.234",
+   "C"
+  ],
+  "expected": "ERR:temperature must be a number with at most 2 decimals, between -1000000 and 1000000"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "",
+   "C"
+  ],
+  "expected": "ERR:temperature must be a number with at most 2 decimals, between -1000000 and 1000000"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "5",
+   "X"
+  ],
+  "expected": "ERR:unit must be one of C, F, K"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "1e3",
+   "C"
+  ],
+  "expected": "ERR:temperature must be a number with at most 2 decimals, between -1000000 and 1000000"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   ".5",
+   "C"
+  ],
+  "expected": "ERR:temperature must be a number with at most 2 decimals, between -1000000 and 1000000"
+ },
+ {
+  "fn": "convertTruth",
+  "args": [
+   "5.",
+   "C"
+  ],
+  "expected": "ERR:temperature must be a number with at most 2 decimals, between -1000000 and 1000000"
+ },
+ {
+  "fn": "changeTruth",
+  "args": [
+   "10",
+   "C"
+  ],
+  "expected": "A change of 10 C is a change of exactly 18 F and exactly 10 K."
+ },
+ {
+  "fn": "changeTruth",
+  "args": [
+   "18",
+   "F"
+  ],
+  "expected": "A change of 18 F is a change of exactly 10 C and exactly 10 K."
+ },
+ {
+  "fn": "changeTruth",
+  "args": [
+   "1",
+   "K"
+  ],
+  "expected": "A change of 1 K is a change of exactly 1 C and exactly 1.8 F."
+ },
+ {
+  "fn": "changeTruth",
+  "args": [
+   "-5",
+   "C"
+  ],
+  "expected": "A change of -5 C is a change of exactly -9 F and exactly -5 K."
+ },
+ {
+  "fn": "changeTruth",
+  "args": [
+   "0.01",
+   "F"
+  ],
+  "expected": "A change of 0.01 F is a change of about 0.01 C and about 0.01 K. Figures marked about are rounded to 2 decimal places."
+ },
+ {
+  "fn": "changeTruth",
+  "args": [
+   "1000000",
+   "F"
+  ],
+  "expected": "A change of 1000000 F is a change of about 555555.56 C and about 555555.56 K. Figures marked about are rounded to 2 decimal places."
+ },
+ {
+  "fn": "changeTruth",
+  "args": [
+   "-1000000",
+   "C"
+  ],
+  "expected": "A change of -1000000 C is a change of exactly -1800000 F and exactly -1000000 K."
+ },
+ {
+  "fn": "changeTruth",
+  "args": [
+   "1.5",
+   "F"
+  ],
+  "expected": "A change of 1.5 F is a change of about 0.83 C and about 0.83 K. Figures marked about are rounded to 2 decimal places."
+ },
+ {
+  "fn": "changeTruth",
+  "args": [
+   "0",
+   "C"
+  ],
+  "expected": "A change of 0 C is a change of exactly 0 F and exactly 0 K."
+ },
+ {
+  "fn": "changeTruth",
+  "args": [
+   "abc",
+   "C"
+  ],
+  "expected": "ERR:temperature must be a number with at most 2 decimals, between -1000000 and 1000000"
+ },
+ {
+  "fn": "changeTruth",
+  "args": [
+   "5",
+   "R"
+  ],
+  "expected": "ERR:unit must be one of C, F, K"
+ },
+ {
+  "fn": "changeTruth",
+  "args": [
+   "1000001",
+   "C"
+  ],
+  "expected": "ERR:temperature must be a number with at most 2 decimals, between -1000000 and 1000000"
+ },
+ {
+  "fn": "sameTruth",
+  "args": [
+   "C",
+   "F"
+  ],
+  "expected": "C and F read the same number at exactly -40."
+ },
+ {
+  "fn": "sameTruth",
+  "args": [
+   "F",
+   "C"
+  ],
+  "expected": "F and C read the same number at exactly -40."
+ },
+ {
+  "fn": "sameTruth",
+  "args": [
+   "C",
+   "K"
+  ],
+  "expected": "C and K never read the same number: they always differ by a fixed amount."
+ },
+ {
+  "fn": "sameTruth",
+  "args": [
+   "K",
+   "C"
+  ],
+  "expected": "K and C never read the same number: they always differ by a fixed amount."
+ },
+ {
+  "fn": "sameTruth",
+  "args": [
+   "F",
+   "K"
+  ],
+  "expected": "F and K read the same number at about 574.59."
+ },
+ {
+  "fn": "sameTruth",
+  "args": [
+   "K",
+   "F"
+  ],
+  "expected": "K and F read the same number at about 574.59."
+ },
+ {
+  "fn": "sameTruth",
+  "args": [
+   "C",
+   "C"
+  ],
+  "expected": "ERR:pick two different scales"
+ },
+ {
+  "fn": "sameTruth",
+  "args": [
+   "F",
+   "F"
+  ],
+  "expected": "ERR:pick two different scales"
+ },
+ {
+  "fn": "sameTruth",
+  "args": [
+   "X",
+   "C"
+  ],
+  "expected": "ERR:unit must be one of C, F, K"
+ },
+ {
+  "fn": "sameTruth",
+  "args": [
+   "C",
+   "Y"
+  ],
+  "expected": "ERR:unit must be one of C, F, K"
+ }
+]
