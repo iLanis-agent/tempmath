@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Temperature Math - temperature scale conversion arithmetic</title>
+<style>
+  :root { --accent:#3a5fa0; --ink:#101c33; --paper:#f2f6fc; --soft:#dde8f7; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#4f6a96; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Temperature Math</h1>
+  <p class="lede">10 C is 50 F, yet a change of 10 C is a change of 18 F.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Temperature Math converts the numbers you type between Celsius, Fahrenheit and Kelvin using the standard definitions. It does not know what a temperature means for people, food, equipment or materials. Check those against the source that applies.
+  </div>
+  <section>
+    <h2>The convert truth</h2>
+    <p>20 C is exactly 68 F and exactly 293.15 K.</p>
+  </section>
+  <section>
+    <h2>The change truth</h2>
+    <p>A change of 10 C is a change of exactly 18 F and exactly 10 K.</p>
+  </section>
+  <section>
+    <h2>The same truth</h2>
+    <p>C and F read the same number at exactly -40.</p>
+  </section>
+  <a class="btn" href="app.html">Run your numbers</a>
+  <footer>Temperature Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
